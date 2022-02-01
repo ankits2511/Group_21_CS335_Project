@@ -1,11 +1,11 @@
 # ANAA
-            G21 C++ compiler <br /><br />
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## G21 C++ compiler 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ <br/>
 This repository contains the course work for CS335A of group 21 (Compiler Name :- ANAA).
 
-Source :- C++.
-Implementation :- C.
-Target :- x86.
+Source :- C++. <br/>
+Implementation :- C. <br/>
+Target :- x86. <br/>
 
 ### How to run lexer :
 ```bash
