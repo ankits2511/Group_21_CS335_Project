@@ -167,7 +167,57 @@ extern int yydebug;
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef int YYSTYPE;
+union YYSTYPE
+{
+#line 14 "grammar.y"
+
+	Node * node;
+	int value;
+	DeclarationSpecifiers * declaration_specifiers;
+	Declaration * declaration;
+	DeclarationList * declaration_list;
+	Declarator * declarator;
+	DeclaratorList * init_declarator_list;
+	Pointer * pointer;
+	DirectDeclarator * direct_declarator;
+	Identifier * identifier;
+	TypeQualifierList * type_qualifier_list;
+	FunctionDefinition * function_definition;
+	TypeSpecifier * type_specifier;
+	Enumerator * enumerator;
+	EnumeratorList * enumerator_list;
+	StructDeclarationList * struct_declaration_list;
+	StructDeclaration * struct_declaration;
+	SpecifierQualifierList * specifier_qualifier_list;
+	ParameterTypeList * parameter_type_list;
+	ParameterDeclaration * parameter_declaration;
+	DirectAbstractDeclarator * direct_abstract_declarator;
+	AbstractDeclarator * abstract_declarator;
+	Constant *constant;
+	StringLiteral *string_literal;
+	TopLevelExpression* top_level_expression;
+	AssignmentExpression* assignment_expression;
+	ArgumentExprList* argument_expression_list;
+	PostfixExpression* postfix_expression;
+	UnaryExpression* unary_expression;
+	CastExpression* cast_expression;
+	MultiplicativeExpression* multiplicative_expression;
+	AdditiveExpression* additive_expression;
+	ShiftExpression* shift_expression;
+	RelationalExpression* relational_expression;
+	EqualityExpression* equality_expression;
+	AndExpression* and_expression;
+	ExclusiveorExpression* exclusive_or_expression;
+	InclusiveorExpression* inclusive_or_expression;
+	Logical_andExpression* logical_and_expression;
+	Logical_orExpression* logical_or_expression;
+	ConditionalExpression* conditional_expression;
+	Expression* expression;
+
+#line 218 "y.tab.h"
+
+};
+typedef union YYSTYPE YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
