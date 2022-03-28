@@ -3,16 +3,21 @@
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ <br/>
 This repository contains the course work for CS335A of group 21 (Compiler Name :- ANAA).
 
-Source :- C++. <br/>
-Implementation :- C. <br/>
+Source :- C++ 14. <br/>
+Implementation :- C++ 14. <br/>
 Target :- x86. <br/>
 
-### How to run lexer :
+### How to run parser :
 ```bash
 cd src
 make
 cd ..
-./bin/lexer ./tests/Test_number.cpp (Enter number to excecute)
+./bin/final ./tests/Test_number.cpp (Enter number to excecute)
+```
+### How to view DOT
+```bash
+dot -Tpdf graph.dot -o graph.pdf
+make clean
 ```
 
 ### How to clean (To remove binary file from bin)
