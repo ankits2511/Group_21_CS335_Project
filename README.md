@@ -26,11 +26,18 @@ cd src
 make clean
 ```
 
+### Features Implemented:
+1. Native Data types( integer, floating point, character, void)
+2. Variables( Gloabal and Local scope supported ) and Expressions 
+3. All types of arithmetic operations supported
+4. Control structure(Conditional statements, Loops)
+5. User defined types(struct, class)
+6. Recursive functions supported
+7. Pointers
+
 
 ### Group Members:<br /> 
 1. Akash Kumar Bhoi (190082)<br />
 2. Ankit Shinde (190802)<br />
 3. Naveen Kumar Mathur (190535)<br />
 4. Aryan Kumar (190185)
-
-
