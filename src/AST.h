@@ -30,10 +30,10 @@ typedef struct{
 	treeNode* node;
 	string str;
 	bool is_node;
-}data;
+}data; 
 
 
-
+   
 
 void startDOT();
 void endDOT();
