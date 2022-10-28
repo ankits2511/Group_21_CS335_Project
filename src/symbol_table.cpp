@@ -1,6 +1,6 @@
 #include "symbol_table.h"
 
-sym_table gst;
+sym_table  gst;
 struct_sym_table struct_gst;
 map<sym_table*, sym_table*> parent_table;
 map<struct_sym_table*, struct_sym_table*> struct_parent_table;
@@ -21,7 +21,8 @@ typ_table* curr_typ;
 int struct_count = 1;
 int avl=0;
 
-int blockCnt = 1;
+int blockCnt = 0;
+blockCnt++;
 
 void symTable_init(){
 	Goffset.push(0);
