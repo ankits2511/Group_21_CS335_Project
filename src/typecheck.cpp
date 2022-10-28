@@ -1,9 +1,9 @@
 #include "typecheck.h"
 
 
-string primaryExpression(string id) {
+string primaryExpression(string  id) {
     sym_entry* n = lookup(id);
-    if(n) {
+    if(n!=0) {
         string s = n->type;
         return s;     
     }
